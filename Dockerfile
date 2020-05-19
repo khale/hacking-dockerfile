@@ -3,38 +3,39 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y \
-    silversearcher-ag \
-    gcc \
-    make \
-    binutils \
-    xorriso \ 
-    qemu-system-x86 \
-    perl \
-    python3 \
-    locate \
-    git \
-    tig \
     bat \
+    binutils \
     cscope \
     ctags \
-    htop \
-    neovim \
-    xxd \
-    emacs \
-    grub2 \ 
-    ncurses-dev \
-    python3-pip \
     curl \
-    thefuck \
-    tmux \
-    gdb \
-    valgrind \
-    ssh \
-    netcat \
+    emacs \
+    fd-find \
     fish \
     fzf \
+    gcc \
+    gdb \
+    git \
+    grub2 \ 
+    htop \
+    julia \
     language-pack-en \
-    julia
+    locate \
+    make \
+    ncurses-dev \
+    neovim \
+    netcat \
+    perl \
+    python3 \
+    python3-pip \
+    qemu-system-x86 \
+    silversearcher-ag \
+    ssh \
+    thefuck \
+    tig \
+    tmux \
+    valgrind \
+    xorriso \ 
+    xxd 
 
 # for powerline
 RUN locale-gen en_US.UTF-8
