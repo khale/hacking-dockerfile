@@ -55,7 +55,7 @@ RUN git clone https://github.com/khale/neovim-config && mkdir -p /root/.config/n
 RUN nvim --headless +PlugInstall +qall
 RUN git clone https://github.com/khale/dotfiles && mkdir -p /root/.config/fish && mv dotfiles/fish-config /root/.config/fish/config.fish && mv dotfiles/gitnow-config ~/.gitflow
 RUN git clone https://github.com/khale/fisher-config && mv fisher-config/fishfile /root/.config/fish/ && rm -rf fisher-config
-RUN git clone https://github.com/khale/.tmux && ln -s -f .tmux/.tmux.conf  && cp .tmux/.tmux.conf.local /root
+RUN git clone https://github.com/khale/.tmux && ln -s -f .tmux/.tmux.conf  /root/.tmux.conf && cp .tmux/.tmux.conf.local /root
 
 WORKDIR /hack
 
