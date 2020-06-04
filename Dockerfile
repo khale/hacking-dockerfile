@@ -29,6 +29,7 @@ RUN apt-get update && \
     python3 \
     python3-pip \
     qemu-system-x86 \
+    radare2 \
     silversearcher-ag \
     software-properties-common \
     ssh \
